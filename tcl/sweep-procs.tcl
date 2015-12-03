@@ -17,6 +17,11 @@ namespace eval notification::sweep {
         # Also sweep the dynamic notification requests that have been sent out
         db_dml delete_dynamic_requests {}
 
+	# before the killing starts, remove invalid requests
+	foreach request_id [db_list select_invalid_request_ids {}] {
+	    notification::request::delete -request_id $request_id
+	}
+
         # Get the list of the ones to kill
         set notification_id_list [db_list select_notification_ids {}]
 
@@ -57,7 +62,7 @@ namespace eval notification::sweep {
             foreach notif $notifications {
                 ns_log Debug "NOTIF-BATCHED: one notif $notif"
 
-                if {$notif != "STOP"} {
+                if {$notif ne "STOP"} {
                     ns_log Debug "NOTIF-BATCHED: NOT a stop codon"
                     set user_id [ns_set get $notif user_id]
                     set type_id [ns_set get $notif type_id]
@@ -69,12 +74,12 @@ namespace eval notification::sweep {
 
                 # Check if we have a new user_id and type_id
                 # if so, batch up previous stuff and send it
-                if {$notif == "STOP" || $user_id != $prev_user_id || $type_id != $prev_type_id} {
+                if {$notif eq "STOP" || $user_id != $prev_user_id || $type_id != $prev_type_id} {
 
                     ns_log Debug "NOTIF-BATCHED: batching things up for $prev_user_id"
 
                     # If no content, keep going
-                    if {![empty_string_p $batched_content_text]} {
+                    if {$batched_content_text ne ""} {
                         ns_log Debug "NOTIF-BATCHED: content to send!"
                         db_transaction {
                             ns_log Debug "NOTIF-BATCHED: sending content"
@@ -110,7 +115,7 @@ namespace eval notification::sweep {
                     }
                 }
 
-                if {$notif == "STOP"} {
+                if {$notif eq "STOP"} {
                     continue
                 }
                 
@@ -121,11 +126,11 @@ namespace eval notification::sweep {
                 set notif_text [ns_set get $notif notif_text]
                 set notif_html [ns_set get $notif notif_html]
 
-                if {[empty_string_p $notif_text]} {
+                if {$notif_text eq ""} {
                     set notif_text [ad_html_text_convert -from html -to text -- $notif_html]
                 }
 
-                if {[empty_string_p $notif_html]} {
+                if {$notif_html eq ""} {
                     set notif_html [ad_html_text_convert -from text -to html -- $notif_text]
                 } else {
                     set html_content_p 1

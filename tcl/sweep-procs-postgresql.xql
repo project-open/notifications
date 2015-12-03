@@ -36,7 +36,20 @@
               and creation_date <= notif_date
               and (notif_date is null or notif_date < current_timestamp)
               and interval_id = :interval_id
+              and exists (select 1 from acs_object_party_privilege_map ppm 
+                           where ppm.object_id = notification_requests.object_id
+                             and ppm.privilege = 'read'
+                             and ppm.party_id = notification_requests.user_id)
           order by user_id, type_id, notif_date
+        </querytext>
+    </fullquery>
+
+    <fullquery name="notification::sweep::cleanup_notifications.select_invalid_request_ids">
+        <rdbms><type>postgresql</type><version>8.4</version></rdbms>
+        <querytext>
+         select request_id
+           from notification_requests
+          where acs_permission__permission_p(object_id, user_id, 'read') is false;
         </querytext>
     </fullquery>
 
