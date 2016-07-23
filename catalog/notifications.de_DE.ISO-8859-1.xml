@@ -2,7 +2,7 @@
 <message_catalog package_key="notifications" locale="de_DE" charset="ISO-8859-1">
 
   <msg key="Action">Aktion</msg>
-  <msg key="Administer_Notifications">Benachrichtigungen administrieren</msg>
+  <msg key="Administer_Notifications">Admin Benachrichtigungen</msg>
   <msg key="Change">Ändern</msg>
   <msg key="Change_frequency">Änderungsfrequenz</msg>
   <msg key="Change_frequency_of_object_name">Frequenz von %object_name% Benachrichtigungen verändern</msg>
