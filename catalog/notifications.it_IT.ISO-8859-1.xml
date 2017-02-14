@@ -12,7 +12,7 @@
   <msg key="lt_Request_Notification_">Richiesta di notifica per %pretty_name%</msg>
   <msg key="lt_system_name_-_Batched">[%system_name% - Notifica Automatica]</msg>
   <msg key="lt_You_have_no_notificat">Non hai notifiche.</msg>
-  <msg key="lt_You_have_requested_no">Hai richiesto la notifica per %pretty_name%. Clicca &lt;a href=&quot;%sub_url%&quot;&gt;qui&lt;/a&gt; per cancellarla.</msg>
+  <msg key="lt_You_have_requested_no">Hai richiesto la notifica per %pretty_name%. Clicca &lt;a href=&#34;%sub_url%&#34;&gt;qui&lt;/a&gt; per cancellarla.</msg>
   <msg key="Manage_Notifications">Regola le notifiche</msg>
   <msg key="Notification_type">Tipo di notifica</msg>
   <msg key="Request_Notification">Richiesta di notifica</msg>
