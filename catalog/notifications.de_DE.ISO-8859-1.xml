@@ -2,7 +2,6 @@
 <message_catalog package_key="notifications" locale="de_DE" charset="ISO-8859-1">
 
   <msg key="Action">Aktion</msg>
-  <msg key="Administer_Notifications">Admin Benachrichtigungen</msg>
   <msg key="Change">Ändern</msg>
   <msg key="Change_frequency">Änderungsfrequenz</msg>
   <msg key="Change_frequency_of_object_name">Frequenz von %object_name% Benachrichtigungen verändern</msg>
@@ -42,7 +41,6 @@
   <msg key="SUBJECT">BETREFF:</msg>
   <msg key="Subscribe_notification">Benachrichtigung</msg>
   <msg key="Subscribe_to_notification">Benachrichtigung:</msg>
-  <msg key="Subscribed_User_ID">Benutzer</msg>
   <msg key="Subscriber">Empfänger</msg>
   <msg key="Subscribers">Empfänger</msg>
   <msg key="there_are_no_users">Es gibt keine Benutzer</msg>
