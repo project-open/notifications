@@ -2,6 +2,7 @@
 <message_catalog package_key="notifications" locale="de_DE" charset="ISO-8859-1">
 
   <msg key="Action">Aktion</msg>
+  <msg key="Administer_Notifications">Admin Benachrichtigungen</msg>
   <msg key="Change">Ändern</msg>
   <msg key="Change_frequency">Änderungsfrequenz</msg>
   <msg key="Change_frequency_of_object_name">Frequenz von %object_name% Benachrichtigungen verändern</msg>
@@ -20,6 +21,8 @@
   <msg key="lt_Notification_Delivery">Benachrichtigungsmethode</msg>
   <msg key="lt_Notification_Delivery_1">Benachrichtigungsmethoden</msg>
   <msg key="lt_Notification_Interval">Benachrichtigungsintervall</msg>
+  <msg key="lt_Notification_Interval_1">Benachrichtigunsintervale</msg>
+  <msg key="lt_Notification_Requests">Benachrichtigungen</msg>
   <msg key="lt_Notifications_Interval">Benachrichtigungsinterval</msg>
   <msg key="lt_Request_Notification_">Benachrichtigungsfunktion für %pretty_name% aktivieren</msg>
   <msg key="lt_system_name_-_Batched">[%system_name% - Batched Notification]</msg>
@@ -31,7 +34,7 @@
   <msg key="Notification">Benachrichtigung</msg>
   <msg key="Notification_Replies">Antworten auf Benachrichtigungen</msg>
   <msg key="Notification_Reply">Antwort auf eine Benachrichtigung</msg>
-  <msg key="Notification_Request">Anfrage für Benachrichtigungen</msg>
+  <msg key="Notification_Request">Anfrage Benachrichtigungen</msg>
   <msg key="Notification_Type">Benachrichtigungstyp</msg>
   <msg key="Notification_type">Benachrichtigungstyp</msg>
   <msg key="Notification_Types">Benachrichtigungstyp</msg>
@@ -41,6 +44,7 @@
   <msg key="SUBJECT">BETREFF:</msg>
   <msg key="Subscribe_notification">Benachrichtigung</msg>
   <msg key="Subscribe_to_notification">Benachrichtigung:</msg>
+  <msg key="Subscribed_User_ID">Benutzer</msg>
   <msg key="Subscriber">Empfänger</msg>
   <msg key="Subscribers">Empfänger</msg>
   <msg key="there_are_no_users">Es gibt keine Benutzer</msg>
