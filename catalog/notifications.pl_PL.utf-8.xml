@@ -11,7 +11,6 @@
   <msg key="lt_Request_Notification_">Ustaw Zawiadomienia o %pretty_name%</msg>
   <msg key="lt_system_name_-_Batched">[%system_name% - Zawiadomienia Hurtowe]</msg>
   <msg key="lt_You_have_no_notificat">Nie ustawiono żadnych zawiadmonień dla Ciebie.</msg>
-  <msg key="lt_You_have_requested_no">Ustwiono zawiadomienia o %pretty_name%. Możesz &lt;a href=&quot;%sub_url%&quot;&gt;je usunąć&lt;/a&gt;.</msg>
   <msg key="Manage_Notifications">Zarządzaj Zawiadomieniami</msg>
   <msg key="Notification_type">Typ Zawiadomienia</msg>
   <msg key="Request_Notification">Ustaw Zawiadomienie</msg>
