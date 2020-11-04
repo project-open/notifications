@@ -2,17 +2,11 @@
 <message_catalog package_key="notifications" locale="nl_NL" charset="ISO-8859-1">
 
   <msg key="Action">Acties</msg>
-  <msg key="Administer_Notifications">Beheer meldingen</msg>
   <msg key="Change">Veranderen</msg>
-  <msg key="Change_frequency">Wijzig frequentie</msg>
-  <msg key="Change_frequency_of_object_name">Wijzig frequentie van %object_name% melding</msg>
-  <msg key="change_interval_object_name">Wijzig melding interval van %notifications.object_name%</msg>
   <msg key="Contents">Inhoud:</msg>
   <msg key="daily">dagelijks</msg>
   <msg key="Delivery_Method">Verzendmethode</msg>
-  <msg key="for_the_object_type">van het object type</msg>
   <msg key="Frequency">Frequentie</msg>
-  <msg key="goto_object_name">Ga naar %notifications.object_name%</msg>
   <msg key="hourly">uurlijks</msg>
   <msg key="instant">onmiddelijk</msg>
   <msg key="Item">Bericht</msg>
@@ -22,12 +16,10 @@
   <msg key="lt_Notification_Interval">Kennisgevingsinterval</msg>
   <msg key="lt_Notification_Interval_1">Kennisgevingsintervals</msg>
   <msg key="lt_Notification_Requests">Kenningsgevingsverzoeken</msg>
-  <msg key="lt_Notifications_Interval">Melding interval</msg>
   <msg key="lt_Request_Notification_">Kennisgevingsfunctie voor %pretty_name%  </msg>
   <msg key="lt_system_name_-_Batched">[%system_name% - Mailing kennisgeving]</msg>
-  <msg key="lt_Ubsubscribe_Notification_">Meld je af voor %pretty_name% email meldingen</msg>
   <msg key="lt_You_have_no_notificat">Er zijn geen berichten voor u.</msg>
-  <msg key="lt_You_have_requested_no">U heeft voor %pretty_name% de kennisgevingsfunctie geactiveerd. Afmelden kan &lt;a href=&#34;%sub_url%&#34;&gt;hier&lt;/a&gt;.</msg>
+  <msg key="lt_You_have_requested_no">U heeft voor %pretty_name% de kennisgevingsfunctie geactiveerd. Afmelden kan &lt;a href=&quot;%sub_url%&quot;&gt;hier&lt;/a&gt;.</msg>
   <msg key="Manage_Notifications">Kennisgevingen beheren</msg>
   <msg key="Notification">Kennisgeving</msg>
   <msg key="Notification_Replies">Kennisgevingsantwoorden</msg>
@@ -38,18 +30,6 @@
   <msg key="Notification_Types">Kennisgevingstypen</msg>
   <msg key="Notifications">Kennisgevingen</msg>
   <msg key="Request_Notification">Kennisgevingsfunctie activeren</msg>
-  <msg key="Send_out_notifications_now">Verzend melding nu</msg>
   <msg key="SUBJECT">ONDERWERP:</msg>
-  <msg key="Subscribe_notification">Abonneer melding</msg>
-  <msg key="Subscribe_to_notification">Abonneer op melding:</msg>
-  <msg key="Subscribed_User_ID">Geabonneerde gebruikers</msg>
-  <msg key="Subscriber">Abonnee</msg>
-  <msg key="Subscribers">Abonnees</msg>
-  <msg key="there_are_no_users">Er zijn geen gebruikers</msg>
   <msg key="Unsubscribe">Afmelden</msg>
-  <msg key="Unsubscribe_from_object_name">Meldt je af voor %notifications.object_name% </msg>
-  <msg key="Unsubscribe_Notifications">Afmelden meldingen</msg>
-  <msg key="Unsubscribe_of_notification">Afmelden voor melding:</msg>
-  <msg key="unsubscribe_user">Afmelden geselecteerde gebruikers</msg>
-  <msg key="User">Gebruiker</msg>
 </message_catalog>
