@@ -334,7 +334,7 @@ namespace eval notification {
 
                 # Updating the clob columns directly
                 # to avoid this limitation.
-                db_dml update_message {} -clobs [list $notif_html $notif_text]
+                # db_dml update_message {} -clobs [list $notif_html $notif_text]
 
             }
         }
